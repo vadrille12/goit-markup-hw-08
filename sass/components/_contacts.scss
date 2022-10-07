@@ -1,22 +1,18 @@
 .contacts {
   display: flex;
 
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: center;
-  }
-
-  @media screen and(max-width:1199px) {
-    flex-direction: column;
-  }
-
   &.list {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: 768px) {
       margin-left: 84px;
+      flex-direction: column;
     }
+
     @media screen and (min-width: 1200px) {
       margin-left: 305px;
+      flex-direction: row;
     }
   }
 }
@@ -29,9 +25,6 @@
   }
 
   & + & {
-    @media screen and (max-width: 767px) {
-      margin-top: 16px;
-    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-top: 10px;
     }
@@ -46,20 +39,22 @@
   fill: $secondary-link-color;
 
   font-weight: 500;
-  letter-spacing: 0.02em;
-  @media screen and(max-width:767px) {
-    font-size: 18px;
-  }
-  @media screen and(max-width:1199px) {
+  font-size: 24px;
+  line-height: calc(28 / 24);
+
+  @media screen and (min-width: 768px) {
     font-size: 12px;
-    line-height: 1.667;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.14;
+    line-height: calc(14 / 12);
   }
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -67,10 +62,25 @@
   }
 }
 
+.tel {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+    color: $accent-color;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+  }
+}
+
 .contacts__icon {
-  margin-right: 10px;
-  @media screen and(min-width:768px) and(max-width:1199px) {
-    margin-right: 8px;
-    transform: scale(0.85);
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 10px;
+
+    @media screen and(min-width:768px) and(max-width:1199px) {
+      margin-right: 8px;
+      transform: scale(0.85);
+    }
   }
 }

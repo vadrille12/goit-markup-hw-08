@@ -1,0 +1,22 @@
+.socials {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 64px;
+
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
