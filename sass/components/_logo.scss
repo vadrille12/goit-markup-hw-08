@@ -1,0 +1,24 @@
+.logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  color: $logo-up-color;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.174;
+}
+
+.logo__text {
+  color: $accent-color;
+}
+
+.footer .logo {
+  margin: 0;
+  color: $logo-down-color;
+}

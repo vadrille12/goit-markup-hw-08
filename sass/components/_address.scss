@@ -1,0 +1,22 @@
+.address__text {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.address {
+  color: $address-color;
+  font-style: normal;
+}
+
+.address__link {
+  color: $address-secondary-color;
+
+  display: inline-block;
+  margin-top: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
