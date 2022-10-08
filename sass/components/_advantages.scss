@@ -19,17 +19,20 @@
   &__text {
     margin: 0;
   }
-}
 
-.advantages__title {
-  margin-top: 0px;
-  margin-bottom: 10px;
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  text-align: start;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: start;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
 }
 
 .advantages__item {

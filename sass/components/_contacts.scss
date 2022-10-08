@@ -6,12 +6,12 @@
     flex-direction: column-reverse;
 
     @media screen and (min-width: 768px) {
-      margin-left: 84px;
+      margin-left: 90px;
       flex-direction: column;
     }
 
     @media screen and (min-width: 1200px) {
-      margin-left: 305px;
+      margin-left: 321px;
       flex-direction: row;
     }
   }
@@ -43,11 +43,13 @@
   line-height: calc(28 / 24);
 
   @media screen and (min-width: 768px) {
+    padding-top: 20px;
     font-size: 12px;
     line-height: calc(14 / 12);
   }
 
   @media screen and (min-width: 1200px) {
+    padding: 32px 0;
     font-size: 14px;
     line-height: calc(16 / 14);
   }
@@ -68,6 +70,11 @@
     color: $accent-color;
     font-size: 34px;
     line-height: calc(40 / 34);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 }
 

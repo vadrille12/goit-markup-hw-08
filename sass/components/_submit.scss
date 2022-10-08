@@ -12,11 +12,10 @@
 .submit {
   display: inline-flex;
   align-items: center;
-  padding-left: 29px;
-  margin-left: 12px;
+  justify-content: center;
 
   &__icon {
-    margin: 13px 28px 13px 10px;
+    margin-left: 10px;
     fill: $primary-bg-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
