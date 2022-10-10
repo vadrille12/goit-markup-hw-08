@@ -7,10 +7,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
-
 
 ul {
   list-style: none;

@@ -23,27 +23,32 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo link" href="./index.html"
-            ><span class="logo__text">Web</span>Studio</a
-          >
-
-          <button
-            type="button"
-            class="menu-button"
-            aria-expanded="false"
-            data-menu-button
-          >
-            <svg
-              class="menu-button__icon"
-              height="40"
-              width="40"
-              aria-label="Переключатель мобильного меню"
+          <div class="lb-wrapper">
+            <a class="logo link" href="./index.html"
+              ><span class="logo__text">Web</span>Studio</a
             >
-              <use class="icon-cross" href="./img/sprite.svg#icon-cross"></use>
-              <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <div class="menu-conteiner" data-menu>
+
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              data-menu-button
+            >
+              <svg
+                class="menu-button__icon"
+                height="40"
+                width="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="./img/sprite.svg#icon-cross"
+                ></use>
+                <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="menu-container" data-menu>
             <ul class="list nav__list">
               <li class="nav__item mb">
                 <a class="link nav__link current" href="./index.html">
@@ -51,9 +56,7 @@
                 >
               </li>
               <li class="nav__item mb-1">
-                <a class="link nav__link " href="./portfolio.html"
-                  >Портфоліо</a
-                >
+                <a class="link nav__link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="nav__item">
                 <a class="link nav__link" href="#address">Контакти</a>
@@ -173,8 +176,10 @@
                   class="checkbox visually-hidden"
                 />
                 <span class="checkbox__icon"></span>
-                Погоджуюся з розсилкою та приймаю
-                <a href="" class="contract__link">Умови договору</a>
+                <div class="contract__wrapper">
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="" class="contract__link">Умови договору</a>
+                </div>
               </label>
             </div>
             <button type="submit" class="button">Відправити</button>
