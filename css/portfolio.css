@@ -689,9 +689,6 @@ h2 {
 }
 
 .galerry-card__thumb {
-  display: flex;
-  align-items: center;
-  max-height: 294px;
   position: relative;
   overflow: hidden;
 }
